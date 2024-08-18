@@ -1,0 +1,66 @@
+/* Add all your styles here */
+*{
+  margin:0;
+  padding:0;
+  font-family:poppines;
+}
+.flex{
+  gap:2vw;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+h1{
+  mix-blend-mode:difference;
+}
+body{
+  color:white;
+  height:100vh;
+  flex-direction:column;
+  background:linear-gradient(45deg,purple,skyblue,white);
+}
+.input{
+  padding:2vw;
+  border-radius:10px;
+  background-color:#222;
+}
+input{
+  padding:2vw;
+  border-radius:8px;
+}
+.btn{
+  color:white;
+  padding:1vw;
+  border-radius:3px;
+  font-weight:bold;
+  border:1px outset gray;
+  background-color:crimson;
+}
+.output{
+  width:80vw;
+  padding:2vw;
+  border-radius:10px;
+  flex-wrap:wrap;
+  box-shadow:1px 1px 6px black;
+  background:linear-gradient(45deg,black,purple,black);
+}
+.top{
+  width:100%;
+  justify-content:space-between;
+}
+.temp{
+  width:45%;
+  height:60%;
+  font-size:8vw;
+  font-weight:bold;
+}
+.temp i{
+  display:flex;
+  font-size:4vw;
+  align-self:flex-start;
+}
+.aside{
+  width:45%;
+  flex-direction:column;
+  align-items:flex-start;
+}
