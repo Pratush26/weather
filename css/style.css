@@ -54,6 +54,7 @@ input{
   height:60%;
   font-size:8vw;
   font-weight:bold;
+  border-radius:50%;
 }
 .aside{
   width:45%;

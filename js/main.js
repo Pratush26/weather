@@ -1,5 +1,6 @@
 // Add all your JS here
 var btn = document.querySelector('.btn')
+var body = document.querySelector('body')
 var input = document.querySelector('input')
 var output = document.querySelector('.output')
 var tops = document.querySelectorAll('.output .top span')
@@ -20,8 +21,12 @@ btn.addEventListener('pointerdown', async ()=>{
   aside[1].innerText = `Dewpoint:${result.current.dewpoint_c}°C`
   aside[2].innerText = `Wind-speed: ${result.current.wind_kph}kmph`
   aside[3].innerText = `wind-direction:${result.current.wind_degree}°`
-
-  console.log(result)
+  if(result.current.is_day==0){
+    body.style.background = 'linear-gradient(45deg,black,purple,black)'
+  }
+  else{
+     body.style.background = 'linear-gradient(45deg,black,purple,white)'
+  }
 })
 btn.addEventListener('pointerup',()=>{
   btn.style.cssText = 'border:2px outset gray;'
